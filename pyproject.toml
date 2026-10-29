@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "likert-analyzer"
+version = "0.1.0"
+description = "Summarize Likert survey items with reverse coding, distributions and Cronbach's alpha."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+likert-analyzer = "likert_analyzer.cli:main"
+
+[tool.setuptools]
+packages = ["likert_analyzer"]
